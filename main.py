@@ -30,6 +30,8 @@ def gcd(args):
     return reduce(gcd, args)
 
 args = [int(x) for x in input().split()]
-print('lcm =', lcm(args))
-gcd = gcd(args)
-print('lcm formula =', find_formula(lcm(args)))
+print('lcm =', lcm(*args))
+gcd = gcd(*args)
+print('lcm formula =', find_formula(lcm(*args)))
+print('gcd =', find_formula(gcd))
+print("gcd formula = ", find_formula(gcd))
